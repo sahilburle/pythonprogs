@@ -8,9 +8,11 @@ def binarySearch(list, no, low, high):
         if list[mid] == no:
             return mid
 
+        #for left half
         elif list[mid] > no:
             return binarySearch(list, no, low, mid-1)
 
+        #for right half
         else:
             return binarySearch(list, no, mid+1, high)
 
